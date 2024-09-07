@@ -26,7 +26,7 @@ public macro DataClass(input: Tokens) {
     // println("a${body.decls.get(0).getOrThrow().identifier.value}")
     var a:Tokens = Tokens()
 
-    for (decl in body.decls) {
+    for (decl  in body.decls ) {
         // match(decl.modifiers){
         //     case 
         // }

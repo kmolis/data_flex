@@ -27,9 +27,9 @@ public macro DataClass(input: Tokens) {
     var a:Tokens = Tokens()
 
     for (decl in body.decls) {
-        match(decl.modifiers){
-            case 
-        }
+        // match(decl.modifiers){
+        //     case 
+        // }
         a.append(quote(
             jsonObj.put($(decl.identifier.value),JsonString(this.$(decl.identifier)))
         ))

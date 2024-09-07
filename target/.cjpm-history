@@ -1,0 +1,23 @@
+{
+  "resolves": [
+    {
+      "rootPackageName": "data_flex",
+      "modulePath": ".",
+      "packagePath": "G:\\data\\TLS\\remote_control\\libs\\data_flex\\src",
+      "fullName": "data_flex",
+      "isMacroPackage": true,
+      "output-type": "dynamic",
+      "compile-option": "",
+      "native-compile-option": "",
+      "customized-option": {},
+      "link-option": "",
+      "native-link-option": "",
+      "requires": [],
+      "c_libs": {},
+      "isTestPkg": false,
+      "accessLevel": "public"
+    }
+  ],
+  "binDeps": {},
+  "crossBinDeps": {}
+}

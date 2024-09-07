@@ -1,15 +1,15 @@
 [33mwarning[0m: unused variable:'s'
-  [36m==>[0m G:\data\TLS\remote_control\libs\data_flex\src\DataClass.cj:39:9:
+  [36m==>[0m G:\data\TLS\remote_control\libs\data_flex\src\DataClass.cj:41:9:
    [36m| [0m
-[36m39[0m [36m| [0m    var s = "${body.decls.get(0).getOrThrow().identifier.value}"[0m
+[36m41[0m [36m| [0m    var s = "${body.decls.get(0).getOrThrow().identifier.value}"[0m
    [36m| [0m        [33m^ unused variable[0m
    [36m| [0m
    [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
 
 [33mwarning[0m: unused variable:'i'
-  [36m==>[0m G:\data\TLS\remote_control\libs\data_flex\src\DataClass.cj:40:9:
+  [36m==>[0m G:\data\TLS\remote_control\libs\data_flex\src\DataClass.cj:42:9:
    [36m| [0m
-[36m40[0m [36m| [0m    var i = body.decls.get(0).getOrThrow().identifier[0m
+[36m42[0m [36m| [0m    var i = body.decls.get(0).getOrThrow().identifier[0m
    [36m| [0m        [33m^ unused variable[0m
    [36m| [0m
    [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`

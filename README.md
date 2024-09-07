@@ -11,11 +11,14 @@ public class User{
 }
 ```
 
+<h4>许多个小目标:<h4>
 
-许多个小目标：
+1.修复无法只匹配函数中变量的问题 加入模式匹配
 
-1.修复宏内无法过滤非变量的Token
+2.加入自动类型匹配 如 String类型则转换为JsonString Int则是JsonInt
 
-2.增加类型匹配 如String对应JsonString Int对应JsonInt
+3.加入可选引用库 如引用Json库则 加入toJson函数 引用yaml库则加入toYaml函数 等
 
-3.增加可选则引入文件来加入函数 比如引用json库则加入toJson函数 引用yaml就加入toYaml函数
+4.待定
+
+需要功能联系qq:2310046309投稿

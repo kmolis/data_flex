@@ -1,6 +1,7 @@
 macro package data_flex
 
 import std.ast.*
+import encoding.json.*
 
 public macro DataClass(input: Tokens) {
     // 创建类定义节点
@@ -16,12 +17,32 @@ public macro DataClass(input: Tokens) {
     for (decl in body.decls) {
         if (decl is VarDecl) {
             println("变量")
+            var VarDecl = decl as VarDecl
+            println("${VarDecl?.declType.typeParameterName.dump()}")
+
+            var inputValueType = VarDecl?.declType.toTokens().get(0).value
+            // println("${(VarDecl?.declType.toTokens().get(0) == Option()}")
+            
+            var outValueType: Tokens = Tokens()
+
+            VarDecl?.declType.dump()
+            println("${VarDecl?.declType.typeParameterName.value}")
+            if (inputValueType == "String") {
+                outValueType = quote(JsonString)
+            } else if (inputValueType == "Int" || inputValueType == "Int64") {
+                outValueType = quote(JsonInt)
+            }else if (inputValueType == "Bool"){
+                outValueType = quote(JsonBool)
+            }else if (inputValueType == "Float"){
+                outValueType = quote(JsonFloat)
+            }
+            // var  a :Float = 
             a.append(
                 quote(
-                    jsonObj.put($(decl.identifier.value),JsonString(this.$(decl.identifier)))
+                    jsonObj.put($(decl.identifier.value),$(outValueType)(this.$(decl.identifier)))
                 )
             )
-        }else{
+        } else {
             println("非变量")
         }
     }

@@ -1,0 +1,12 @@
+[33mwarning[0m: unreachable block in 'if' expression
+  [36m==>[0m G:\data\TLS\remote_control\libs\data_flex\src\DataClass.cj:40:60:
+   [36m| [0m
+[36m40[0m [36m| [0m              if (VarDecl?.declType.toTokens().get(0) is Int){[0m
+   [36m| [0m [33m_[0m[33m___________________________________________________________^[0m
+[36m41[0m [36m| [0m[33m|[0m                 println("存在")[0m
+[36m42[0m [36m| [0m[33m|[0m             }[0m
+   [36m| [0m[33m|[0m[33m_[0m[33m____________^ unreachable block in 'if' expression[0m
+   [36m| [0m
+   [36m#[0m [0mnote[0m: this warning can be suppressed by setting the compiler option `-Woff unused`
+
+1 warning generated, 1 warning printed.

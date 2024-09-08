@@ -16,16 +16,16 @@ public macro DataClass(input: Tokens) {
     // 给我添加decl匹配类型 必须为VarDecl
     for (decl in body.decls) {
         if (decl is VarDecl) {
-            println("变量")
+            // println("变量")
             var VarDecl = decl as VarDecl
-            println("${VarDecl?.declType.typeParameterName.dump()}")
+            // println("${VarDecl?.declType.typeParameterName.dump()}")
 
             var inputValueType = VarDecl?.declType.toTokens().get(0).value
             // println("${(VarDecl?.declType.toTokens().get(0) == Option()}")
             
             var outValueType: Tokens = Tokens()
 
-            VarDecl?.declType.dump()
+            // VarDecl?.declType.dump()
             println("${VarDecl?.declType.typeParameterName.value}")
             if (inputValueType == "String") {
                 outValueType = quote(JsonString)
@@ -43,7 +43,7 @@ public macro DataClass(input: Tokens) {
                 )
             )
         } else {
-            println("非变量")
+            // println("非变量")
         }
     }
     var keyValuesDecl: VarDecl = VarDecl(quote(

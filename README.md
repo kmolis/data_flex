@@ -2,13 +2,16 @@
 
 ```
 import data_flex.*
-
 import encoding.json.*
 
 @DataClass
-public class User{
-    public var name:String = "" 
+public class User {
+    public var name: String = ""
+    public var age: Int64 = 0
+    public var die: Bool = false
+    public var height: Float64 = 60.0
 }
+
 ```
 
 <h4>许多个小目标:<h4>
@@ -21,10 +24,8 @@ public class User{
 
 4.待定
 
-
 目前支持的数据类型：
 
-String Int Int64 Bool Float
-
+String Int Int64 Bool Float64
 
 需要功能联系qq:2310046309投稿

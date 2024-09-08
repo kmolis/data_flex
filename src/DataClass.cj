@@ -33,7 +33,7 @@ public macro DataClass(input: Tokens) {
                 outValueType = quote(JsonInt)
             }else if (inputValueType == "Bool"){
                 outValueType = quote(JsonBool)
-            }else if (inputValueType == "Float"){
+            }else if (inputValueType == "Float64"){
                 outValueType = quote(JsonFloat)
             }
             // var  a :Float = 

@@ -1,4 +1,15 @@
-示例代码 会为这个类自动加上toJson函数 返回值是一个JsonObject对象
+<h5>宏介绍：</h5>
+
+本仓库项目基于仓颉语言 编译器版本0.54.3
+
+为开发者简化序列化与反序列化 提高开发效率
+
+为类添加方法
+
+- init(jsonStr:String)   ---   通过json字符串初始化类 键值对应数据自动填入
+- toJson():JsonObject   ---   将类中数据全部转换为Json对象 无需额外实现
+
+示例代码
 
 ```
 import data_flex.*
@@ -22,10 +33,15 @@ public class User {
 
 3.加入可选引用库 如引用Json库则 加入toJson函数 引用yaml库则加入toYaml函数 等
 
-4.待定
+4.加入 init(json:JsonObject)
 
-目前支持的数据类型：
+5.待投稿
 
-String Int Int64 Bool Float64
+<h5>类中支持的数据类型：<h5>
 
-需要功能联系qq:2310046309投稿
+- String   ---   字符串
+- Int/Int64   ---   整数
+- Bool   ---   布尔值
+- Float64   ---   小数
+
+需要额外功能联系qq:2310046309投稿

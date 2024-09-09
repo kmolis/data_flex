@@ -4,10 +4,17 @@
 
 为开发者简化序列化与反序列化 提高开发效率
 
-为类添加方法
+<h4>为类添加方法</h4>
 
 - init(jsonStr:String)   ---   通过json字符串初始化类 键值对应数据自动填入
 - toJson():JsonObject   ---   将类中数据全部转换为Json对象 无需额外实现
+
+<h4>类中支持的数据类型：<h4>
+
+- String   ---   字符串
+- Int/Int64   ---   整数
+- Bool   ---   布尔值
+- Float64   ---   小数
 
 示例代码
 
@@ -22,7 +29,6 @@ public class User {
     public var die: Bool = false
     public var height: Float64 = 60.0
 }
-
 ```
 
 <h4>许多个小目标:<h4>
@@ -37,11 +43,7 @@ public class User {
 
 5.待投稿
 
-<h5>类中支持的数据类型：<h5>
 
-- String   ---   字符串
-- Int/Int64   ---   整数
-- Bool   ---   布尔值
-- Float64   ---   小数
 
 需要额外功能联系qq:2310046309投稿
+
